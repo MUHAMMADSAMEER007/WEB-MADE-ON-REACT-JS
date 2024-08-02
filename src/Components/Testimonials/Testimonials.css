@@ -1,0 +1,101 @@
+.Testimonials {
+    margin: 80px auto;
+    padding: 0 80px;
+    position: relative;
+}
+
+.next-btn, .back-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 15px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #212EA0;
+}
+
+.back-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    width: 400%; /* 4 slides, each taking 100% width */
+    transition: transform 0.5s ease;
+}
+
+.slider ul li {
+    list-style: none;
+    width: 25%; /* Each slide takes up 25% of the container */
+    padding: 20px;
+}
+
+.slide {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+    padding: 40px;
+    width: 100%; /* Ensure the slide takes up the entire width of its container */
+    border-radius: 10px;
+    color: #676767;
+    line-height: 1.4;
+}
+
+.slide img {
+    width: 65px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 4px solid #212EA0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.user-info h3 {
+    color: #212EA0;
+}
+
+
+@media(max-width: 800px){
+    .Testimonials{
+        padding: 0px 40px;
+    }
+    .next-btn, .back-btn{
+        padding: 10px;
+        width: 35px;
+    }
+    .Testimonials ul li{
+        padding: 10px;
+    }
+    .slide{
+        padding: 50px;
+        border: 3px solid #212EA0;
+    }
+}
+
+
+@media(max-width:600px){
+    .user-info{
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .user-info h3{
+        font-size: 16px;
+    }
+    .slider p{
+        font-size: 12px;
+    }
+}
